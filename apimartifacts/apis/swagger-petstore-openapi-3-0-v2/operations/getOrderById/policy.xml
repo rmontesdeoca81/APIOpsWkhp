@@ -8,16 +8,6 @@
 	<!-- Throttle, authorize, validate, cache, or transform the requests -->
 	<inbound>
 		<base />
-		<send-request mode="new" response-variable-name="secretResponse" timeout="20" ignore-error="false">
-			<set-url>https://KV-WKSHP-APIM-INT-MXC.vault.azure.net/secrets/orderId/?api-version=7.0</set-url>
-			<set-method>GET</set-method>
-			<authentication-managed-identity resource="https://vault.azure.net" />
-		</send-request>
-		<set-variable name="orderId" value="@{
-      var secret = ((IResponse)context.Variables["secretResponse"]).Body.As<JObject>();
-      return "/store/order/" + secret["value"].ToString() + "/";
-  }" />
-		<rewrite-uri template="@((string)context.Variables["orderId"])" />
 	</inbound>
 	<!-- Control if and how the requests are forwarded to services  -->
 	<backend>

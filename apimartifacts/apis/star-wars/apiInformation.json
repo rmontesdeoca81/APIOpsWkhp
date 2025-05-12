@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "sw",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "Implementing the Star Wars API.",
+    "isCurrent": true,
+    "displayName": "Star Wars",
+    "protocols": [
+      "http"
+    ],
+    "serviceUrl": "http://swapi.dev/api",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

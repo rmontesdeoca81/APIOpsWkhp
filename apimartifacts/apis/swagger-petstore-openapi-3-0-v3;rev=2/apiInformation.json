@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "path": "petstore",
+    "apiRevision": "2",
+    "apiRevisionDescription": "Adding KV policy",
+    "apiVersion": "v3",
+    "apiVersionSetId": "/subscriptions/1a94d910-fe8b-412c-b37e-64ce82995afe/resourceGroups/RG-WKSHP-APIM-INTEGRATONS-MXC/providers/Microsoft.ApiManagement/service/APIM-INTEGRATIONS-WKSHP-MXC-001/apiVersionSets/681e247044646eeed2cf66a8",
+    "authenticationSettings": {},
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "description": "Abort processing policy",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "displayName": "Swagger Petstore - OpenAPI 3.0",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://petstore3.swagger.io/api/v3",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true,
+    "termsOfServiceUrl": "https://swagger.io/terms/"
+  }
+}

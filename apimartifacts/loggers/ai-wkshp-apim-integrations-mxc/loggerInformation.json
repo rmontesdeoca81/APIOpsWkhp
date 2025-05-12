@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "loggerType": "applicationInsights",
+    "credentials": {
+      "instrumentationKey": "{{Logger-Credentials--681e3080217d20079c0be3c0}}"
+    },
+    "isBuffered": true,
+    "resourceId": "/subscriptions/1a94d910-fe8b-412c-b37e-64ce82995afe/resourceGroups/RG-WKSHP-APIM-INTEGRATONS-MXC/providers/microsoft.insights/components/AI-WKSHP-APIM-INTEGRATIONS-MXC"
+  }
+}

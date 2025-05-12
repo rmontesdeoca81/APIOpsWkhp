@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: Bin Org
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://apim-integrations-wkshp-mxc-001.azure-api.net/bin
+paths:
+  /get:
+    get:
+      summary: FetchData
+      description: GET Fetch Data
+      operationId: fetchdata
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              example:
+                MockResponse: FetchDataOperation
+                MockMessage:
+                  - message: Mock Response
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

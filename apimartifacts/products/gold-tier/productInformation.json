@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "displayName": "Gold Tier",
+    "description": "Suscribers will be able to run X call/minute up to a Y calls/week",
+    "approvalRequired": false,
+    "state": "published",
+    "subscriptionRequired": true
+  }
+}

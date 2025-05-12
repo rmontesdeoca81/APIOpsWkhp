@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "displayName": "Unlimited",
+    "scope": "/subscriptions/1a94d910-fe8b-412c-b37e-64ce82995afe/resourceGroups/RG-WKSHP-APIM-INTEGRATONS-MXC/providers/Microsoft.ApiManagement/service/APIM-INTEGRATIONS-WKSHP-MXC-001/products/unlimited",
+    "allowTracing": false,
+    "ownerId": "/subscriptions/1a94d910-fe8b-412c-b37e-64ce82995afe/resourceGroups/RG-WKSHP-APIM-INTEGRATONS-MXC/providers/Microsoft.ApiManagement/service/APIM-INTEGRATIONS-WKSHP-MXC-001/users/681652f6217d20079c0bd756",
+    "state": "active"
+  }
+}

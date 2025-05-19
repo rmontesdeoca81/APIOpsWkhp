@@ -6,6 +6,19 @@ info:
 servers:
   - url: https://apim-integrations-wkshp-mxc-001.azure-api.net/bin
 paths:
+  '/status/{codes}':
+    get:
+      summary: GetStatus
+      operationId: getstatus
+      parameters:
+        - name: codes
+          in: path
+          required: true
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: ''
   /get:
     get:
       summary: FetchData
@@ -20,19 +33,6 @@ paths:
                 MockResponse: FetchDataOperation
                 MockMessage:
                   - message: Mock Response
-  '/status/{codes}':
-    get:
-      summary: GetStatus
-      operationId: getstatus
-      parameters:
-        - name: codes
-          in: path
-          required: true
-          schema:
-            type: ''
-      responses:
-        '200':
-          description: ''
   /*:
     get:
       summary: WildcardGet

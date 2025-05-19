@@ -1,6 +1,18 @@
 <policies>
 	<inbound>
 		<base />
+		<set-header name="x-request-received-time" exists-action="override">
+			<value>{{TimeNow}}</value>
+		</set-header>
+		<log-to-eventhub logger-id="event-hub-logger">@{
+         return new JObject(
+             new JProperty("EventTime", DateTime.UtcNow.ToString()),
+             new JProperty("ServiceName", context.Deployment.ServiceName),
+             new JProperty("RequestId", context.RequestId),
+             new JProperty("RequestIp", context.Request.IpAddress),
+             new JProperty("OperationName", context.Operation.Name)
+         ).ToString();
+     }</log-to-eventhub>
 		<set-header name="Accept-Encoding" exists-action="override">
 			<value>deflate</value>
 		</set-header>

@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "bin",
+    "apiRevision": "2",
+    "apiRevisionDescription": "adding mock response to FetchData\n\n\u003Cmock-response status-code=\u0022200\u0022 content-type=\u0022application/json\u0022 /\u003E",
+    "authenticationSettings": {},
+    "description": "",
+    "displayName": "Bin Org",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://httpbin.org",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

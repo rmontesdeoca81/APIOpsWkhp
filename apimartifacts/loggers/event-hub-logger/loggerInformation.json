@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "loggerType": "azureEventHub",
+    "credentials": {
+      "name": "EH-WKSHP-INTEGRATIONS-APIM-MXC",
+      "connectionString": "{{Logger-Credentials--682515b4217d20079c0bf04b}}"
+    },
+    "description": "adding a new logger",
+    "isBuffered": true
+  }
+}

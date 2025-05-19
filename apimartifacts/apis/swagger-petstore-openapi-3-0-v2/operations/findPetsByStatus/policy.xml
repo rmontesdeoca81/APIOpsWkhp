@@ -2,6 +2,7 @@
 	<inbound>
 		<base />
 		<cache-lookup vary-by-developer="false" vary-by-developer-groups="false" allow-private-response-caching="false" must-revalidate="false" downstream-caching-type="none" />
+		<set-backend-service base-url="https://petstore3.swagger.io/api/v3/" />
 	</inbound>
 	<backend>
 		<base />
